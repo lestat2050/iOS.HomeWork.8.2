@@ -127,7 +127,7 @@
                                 <rect key="frame" x="135" y="323.5" width="105" height="20.5"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Tgb-4M-d4j">
-                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
                                     </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a1-fq-Ciu">
                                         <rect key="frame" x="30" y="0.0" width="75" height="20.5"/>
@@ -144,9 +144,6 @@
                             <constraint firstItem="mtS-xd-rrH" firstAttribute="centerX" secondItem="Ed4-78-ClP" secondAttribute="centerX" id="TwD-e0-AGE"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="tog-aJ-blv" kind="show" identifier="" id="82q-dh-Q1I"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vok-hR-Mo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
