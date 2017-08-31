@@ -12,8 +12,6 @@ import RealmSwift
 
 class DataLoader {
     
-    let exhibitionsRef = "https://gallery-guru-prod.herokuapp.com/exhibitions/"
-    
     typealias ExibitionsLoadHandler = (_ exhibitions: [Exhibition]) -> Void
     
     func loadExhibitions(handler: @escaping ExibitionsLoadHandler) {

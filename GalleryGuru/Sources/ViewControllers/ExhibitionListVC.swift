@@ -56,7 +56,7 @@ class ExhibitionListVC: UIViewController {
     // MARK: - Methods
     
     private func subscribeOnChanges() {
-        NotificationCenter.default.addObserver(forName: saver.updateNotificationName,
+        NotificationCenter.default.addObserver(forName: exhibitionUpdateNotificationName,
                                                object: nil, queue: nil) { _ in
             self.exhibitionListTableView.reloadData()
         }
@@ -69,6 +69,14 @@ class ExhibitionListVC: UIViewController {
         exhibitionListTableView.register(UINib(nibName: ExhibitionCell.identifier,
                                                bundle: nil),
                                          forCellReuseIdentifier: ExhibitionCell.identifier)
+    }
+    
+    // MARK: -
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self,
+                                                  name: exhibitionUpdateNotificationName,
+                                                  object: nil)
     }
     
 }
